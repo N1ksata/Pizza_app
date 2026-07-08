@@ -1,4 +1,15 @@
 .button {
   display: inline-block;
   text-decoration: none;
+  background-color: #ff6347;
+  color: white;
+  padding: 15px 32px;
+  border: none;
+  margin: 20px auto;
+  border-radius: 4px;
+}
+
+.hero-container {
+  text-align: center;
+  margin-top: 40px;
 }
