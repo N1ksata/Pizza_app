@@ -1,12 +1,4 @@
 .button {
-  background-color: #5d514f;
-  color: white;
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-
-  display: block;
-  margin: 20px auto;
-  width: 200px;
-  height: 100px;
+  display: inline-block;
+  text-decoration: none;
 }
