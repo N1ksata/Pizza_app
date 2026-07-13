@@ -8,6 +8,7 @@
   transition: all 0.2s ease;
   margin: 20px auto;
   border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero-container {
