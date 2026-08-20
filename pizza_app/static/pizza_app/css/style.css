@@ -1,19 +1,10 @@
-.button {
-  display: inline-block;
-  text-decoration: none;
-  background-color: #2c3e50;
-  color: #ffffff;
-  padding: 12px 30px;
-  font-weight: 600;
-  transition: all 0.2s ease;
-  margin: 20px auto;
-  border-radius: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+/* Import bold, industrial typography */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@700&display=swap");
+
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f6f0;
-  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f0;
+  color: #111111;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,16 +17,46 @@ body {
   margin-top: 40px;
 }
 
-.main-divider {
-  width: 100%;
-  margin: 20px auto;
-  border: 0;
-  border-top: 2px solid #2c3e50;
+h1,
+h2,
+.category-title {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #111111;
+  margin-bottom: 20px;
 }
 
-.category-title {
-  color: #333;
-  margin-bottom: 20px;
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background-color: #d32f2f;
+  color: #ffffff;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+  margin: 20px auto;
+  border-radius: 0;
+  border: 2px solid #111111;
+  box-shadow: 4px 4px 0px #111111;
+}
+
+.button:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.main-divider {
+  width: 100%;
+  margin: 24px auto;
+  border: 0;
+  border-top: 4px solid #111111;
 }
 
 .pizza-item {
@@ -44,11 +65,12 @@ body {
 }
 
 .pizza-item:not(:last-child) {
-  border-bottom: 2px solid #2c3e50;
+  border-bottom: 2px dashed #111111;
 }
 
 .price {
-  font-weight: bold;
-  color: #27ae60;
-  font-size: 1.2em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: #d32f2f;
+  font-size: 1.3em;
 }
