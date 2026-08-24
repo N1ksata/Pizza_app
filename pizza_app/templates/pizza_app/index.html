@@ -7,6 +7,19 @@
     </head>
     
     <body>
+        <div class="auth-bar" style="width: 100%; text-align: right; padding: 10px 20px;">
+        {% if user.is_authenticated %}
+            <span>Welcome, <strong>{{ user.username }}</strong>!</span>
+            <form action="{% url 'logout' %}" method="POST" style="display: inline;">
+                {% csrf_token %}
+                <button type="submit" class="button" style="padding: 6px 15px; font-size: 0.8rem;">Logout</button>
+            </form>
+        {% else %}
+            <a href="{% url 'login' %}" class="button" style="padding: 6px 15px; font-size: 0.8rem;">Log In</a>
+            <a href="{% url 'register' %}" class="button" style="padding: 6px 15px; font-size: 0.8rem;">Register</a>
+        {% endif %}
+        </div>
+        
         <div class="hero-container">
             <h1>Welcome to the Pizza App</h1>
             <h2>Enjoy our delicious pizzas!</h2>
