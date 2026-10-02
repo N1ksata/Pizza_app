@@ -1,17 +1,21 @@
-#virtual en
+# Virtual environments
 env/
 venv/
 ENV/
+.venv/
 
-#python cache
+# Python cache / bytecode
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
 
-#local database
-db.sqlite3
-#junk files
-.DS_Store
-# sec
+# Environment files
 .env
+.env.*
+
+# Local database files
+db.sqlite3
+*.sqlite3
+
+# OS / editor junk
+.DS_Store
